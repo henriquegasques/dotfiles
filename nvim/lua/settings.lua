@@ -3,9 +3,7 @@ require("nvim-tree").setup({
     adaptive_size = true,
     -- mappings = { list = { { key = "some key", action = "some nvim-tree action" }}}
   },
-  filters = {
-    dotfiles = true,
-  },
+  filters = {},
 })
 
 local lsp = require('lsp-zero')
