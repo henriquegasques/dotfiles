@@ -22,8 +22,17 @@ return packer.startup(function(use)
   use 'kyazdani42/nvim-web-devicons' -- Required by some plugins.
   use 'nvim-lua/plenary.nvim' -- Required by a lot of plugins.
 
+  use {
+    'nvim-treesitter/nvim-treesitter',
+    run = function() require('nvim-treesitter.install').update({ with_sync = true }) end
+  }
+
+  -- Colorschemes
+  use { "mcchrish/zenbones.nvim", requires = "rktjmp/lush.nvim" }
+
   use 'nvim-lualine/lualine.nvim' -- Statusline
   use 'kyazdani42/nvim-tree.lua' -- File tree
+  use { 'nvim-telescope/telescope.nvim', tag = '0.1.0' }
 
   use {
     'VonHeikemen/lsp-zero.nvim',
@@ -47,10 +56,6 @@ return packer.startup(function(use)
     }
   }
 
-  -- Colorschemes
-  use { "mcchrish/zenbones.nvim", requires = "rktjmp/lush.nvim" }
-
   -- TODO:
-  -- maybe install telescope
   -- install some git plugin
 end)
