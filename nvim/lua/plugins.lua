@@ -20,6 +20,7 @@ packer.init({
 return packer.startup(function(use)
   use 'wbthomason/packer.nvim' -- Packer can manage itself.
   use 'kyazdani42/nvim-web-devicons' -- Required by some plugins.
+  use 'nvim-lua/plenary.nvim' -- Required by a lot of plugins.
 
   use 'nvim-lualine/lualine.nvim' -- Statusline
   use 'kyazdani42/nvim-tree.lua' -- File tree
