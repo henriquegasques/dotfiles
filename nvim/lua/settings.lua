@@ -12,6 +12,8 @@ lsp.preset('recommended')
 lsp.nvim_workspace()
 lsp.setup()
 
+vim.diagnostic.config({ virtual_text = true })
+
 require('gitsigns').setup {
   -- Overrides default signs for add and change
   signs = {
