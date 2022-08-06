@@ -18,9 +18,9 @@ packer.init({
 })
 
 return packer.startup(function(use)
-  use 'wbthomason/packer.nvim' -- Packer can manage itself.
+  use 'wbthomason/packer.nvim'       -- Packer can manage itself.
   use 'kyazdani42/nvim-web-devicons' -- Required by some plugins.
-  use 'nvim-lua/plenary.nvim' -- Required by a lot of plugins.
+  use 'nvim-lua/plenary.nvim'        -- Required by a lot of plugins.
 
   use {
     'nvim-treesitter/nvim-treesitter',
@@ -30,9 +30,9 @@ return packer.startup(function(use)
   -- Colorschemes
   use { "mcchrish/zenbones.nvim", requires = "rktjmp/lush.nvim" }
 
-  use 'nvim-lualine/lualine.nvim' -- Statusline
-  use 'kyazdani42/nvim-tree.lua' -- File tree
-  use { 'nvim-telescope/telescope.nvim', tag = '0.1.0' }
+  use 'nvim-lualine/lualine.nvim'                        -- Statusline
+  use 'kyazdani42/nvim-tree.lua'                         -- File tree
+  use { 'nvim-telescope/telescope.nvim', tag = '0.1.0' } -- File finder (and more)
 
   use {
     'VonHeikemen/lsp-zero.nvim',

@@ -18,7 +18,7 @@ local options = {
   timeoutlen     = 100,            -- time to wait for a mapped sequence to complete (in milliseconds)
   undofile       = true,           -- enable persistent undo
   updatetime     = 300,            -- faster completion (4000ms default)
-  writebackup    = false,          -- if a file is being edited by another program (or was written to file while editing with another program), it is not allowed to be edited
+  writebackup    = false,          -- if a file is being edited or was written while editing with another program, it is not allowed to be edited
   expandtab      = true,           -- convert tabs to spaces
   shiftwidth     = 2,              -- the number of spaces inserted for each indentation
   tabstop        = 2,              -- insert 2 spaces for a tab
@@ -28,11 +28,16 @@ local options = {
   numberwidth    = 2,              -- set number column width to 2 {default 4}
   signcolumn     = "yes",          -- always show the sign column, otherwise it would shift the text each time
   wrap           = false,          -- display lines as one long line
-  scrolloff      = 10,             -- scroll offset
-  sidescrolloff  = 10,             -- side scroll offset
+  scrolloff      = 15,             -- scroll offset
+  sidescrolloff  = 15,             -- side scroll offset
 }
 
 for key, value in pairs(options) do
   vim.opt[key] = value
 end
+
+vim.cmd [[
+  set colorcolumn=100,120
+  hi ColorColumn ctermbg=lightgrey guibg=lightgrey
+]]
 
