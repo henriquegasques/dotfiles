@@ -1,18 +1,18 @@
 local status_ok, telescope = pcall(require, "telescope")
-if not status_ok then
-  return
-end
+if not status_ok then return end
 
 local actions = require "telescope.actions"
 
 telescope.setup {
   defaults = {
     path_display = { "smart" },
-    layout_strategy = "vertical",
 
     mappings = {
       i = {
         ["<esc>"] = actions.close,
+
+        ["<C-n>"] = actions.cycle_history_next,
+        ["<C-p>"] = actions.cycle_history_prev,
       },
     },
   },

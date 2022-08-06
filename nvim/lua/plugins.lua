@@ -32,6 +32,7 @@ return packer.startup(function(use)
 
   use 'nvim-lualine/lualine.nvim'                        -- Statusline
   use 'kyazdani42/nvim-tree.lua'                         -- File tree
+  use 'lewis6991/gitsigns.nvim'                          -- Git integration
   use { 'nvim-telescope/telescope.nvim', tag = '0.1.0' } -- File finder (and more)
 
   use {
@@ -55,7 +56,4 @@ return packer.startup(function(use)
       {'rafamadriz/friendly-snippets'},
     }
   }
-
-  -- TODO:
-  -- install some git plugin
 end)
