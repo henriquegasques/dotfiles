@@ -27,14 +27,21 @@ local options = {
   relativenumber = true,           -- set relative numbered lines
   numberwidth    = 2,              -- set number column width to 2 {default 4}
   signcolumn     = "yes",          -- always show the sign column, otherwise it would shift the text each time
-  wrap           = false,          -- display lines as one long line
+  wrap           = true,           -- display lines as one long line
   scrolloff      = 15,             -- scroll offset
   sidescrolloff  = 15,             -- side scroll offset
+  list           = true,
 }
 
 for key, value in pairs(options) do
   vim.opt[key] = value
 end
+
+vim.opt.listchars = {
+  trail = "•",
+  eol   = "↲",
+  tab   = "» ",
+}
 
 vim.cmd [[
   set colorcolumn=100,120
