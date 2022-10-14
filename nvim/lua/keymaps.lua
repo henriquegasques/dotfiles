@@ -32,6 +32,10 @@ remap_key("n", "<C-Down>", ":resize +2<CR>")
 remap_key("n", "<C-Left>", ":vertical resize -2<CR>")
 remap_key("n", "<C-Right>", ":vertical resize +2<CR>")
 
+
 remap_key("n", "<C-p>", "<cmd>Telescope find_files<CR>")
 remap_key("n", "<C-f>", "<cmd>Telescope live_grep<CR>")
 remap_key("n", "<C-b>", "<cmd>Telescope buffers<cr>")
+
+remap_key("n", "<leader>d", "<cmd>Telescope lsp_definitions<CR>")
+remap_key("n", "<leader>r", "<cmd>Telescope lsp_references<CR>")
