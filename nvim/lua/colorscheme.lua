@@ -6,14 +6,14 @@ vim.g.zenbones = {
 
 vim.cmd [[
   set termguicolors
-  set background=light
+  set background=dark
 
-  colorscheme zenbones
+  colorscheme gotham
 ]]
 
-require("transparent").setup({ enable = false })
+require("transparent").setup({ enable = true })
 
 -- Override some of Gotham's orange with yellow
--- vim.api.nvim_set_hl(0, "Type", { fg = '#edb443' })
+vim.api.nvim_set_hl(0, "Type", { fg = '#edb443' })
 
 require("lualine").setup { options = { theme = "auto" } }
