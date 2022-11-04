@@ -108,7 +108,11 @@ alias afo="cd ~/workspace/paywith/auth_force_one"
 alias dpe="cd ~/workspace/paywith/dpe"
 alias pgw="cd ~/workspace/paywith/processor_gateway"
 alias fc="cd ~/workspace/paywith/fiserv_client"
+<<<<<<< HEAD
 alias mrs="cd ~/workspace/paywith/mrewards"
+=======
+alias mrs="cd ~/workspace/paywith/mRewards"
+>>>>>>> 88b49f8 (Add .zshrc)
 alias mptl="cd ~/workspace/paywith/mrewards_onboarding_portal"
 alias aptl="cd ~/workspace/paywith/mRewards_admin"
 alias pwach="cd ~/workspace/paywith/pw_ach"
@@ -152,6 +156,7 @@ export PATH=$HOME/.local/bin:$PATH
 
 alias fd=fdfind
 
+<<<<<<< HEAD
 function docker-compose () {
   docker compose $@
 }
