@@ -151,9 +151,4 @@ export PATH=$PATH:/usr/local/go/bin
 export PATH=$HOME/.local/bin:$PATH
 
 alias fd=fdfind
-
-function docker-compose () {
-  docker compose $@
-}
-
 export GITHUB_USERNAME=henriquegasques
