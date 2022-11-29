@@ -151,4 +151,3 @@ export PATH=$PATH:/usr/local/go/bin
 export PATH=$HOME/.local/bin:$PATH
 
 alias fd=fdfind
-export GITHUB_USERNAME=henriquegasques
