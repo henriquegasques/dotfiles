@@ -45,6 +45,6 @@ vim.opt.listchars = {
 }
 
 vim.cmd [[
-  set colorcolumn=100,120
+  set colorcolumn=80,100,120
 ]]
 
