@@ -65,6 +65,7 @@ plugins=(
   vi-mode
   systemd
   zsh-autosuggestions
+  fzf-tab
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -148,6 +149,7 @@ fi
 
 export PATH=$PATH:$HOME/.elixir-ls/release
 export PATH=$PATH:/usr/local/go/bin
+export PATH="$HOME/.luarocks/bin:$PATH"
 export PATH=$HOME/.local/bin:$PATH
 
 alias fd=fdfind
