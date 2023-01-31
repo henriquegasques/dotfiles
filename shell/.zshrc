@@ -113,6 +113,7 @@ alias mrs="cd ~/workspace/paywith/mrewards"
 alias mptl="cd ~/workspace/paywith/mrewards_onboarding_portal"
 alias aptl="cd ~/workspace/paywith/mRewards_admin"
 alias pwach="cd ~/workspace/paywith/pw_ach"
+alias bm="cd ~/workspace/paywith/balance_monitoring"
 
 # Checkout git banches with FZF
 alias gch="git branch -a | fzf | tr -d '[:space:]' | xargs git checkout"
