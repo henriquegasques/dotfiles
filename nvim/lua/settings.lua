@@ -23,5 +23,3 @@ require('gitsigns').setup {
     change = {hl = 'GitSignsChange', text = '▎', numhl='GitSignsChangeNr', linehl='GitSignsChangeLn'},
   },
 }
-
-require('mind').setup()

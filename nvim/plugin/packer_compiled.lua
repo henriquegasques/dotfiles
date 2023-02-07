@@ -139,11 +139,6 @@ _G.packer_plugins = {
     path = "/home/gasks/.local/share/nvim/site/pack/packer/start/mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
   },
-  ["mind.nvim"] = {
-    loaded = true,
-    path = "/home/gasks/.local/share/nvim/site/pack/packer/start/mind.nvim",
-    url = "https://github.com/phaazon/mind.nvim"
-  },
   ["nvim-cmp"] = {
     loaded = true,
     path = "/home/gasks/.local/share/nvim/site/pack/packer/start/nvim-cmp",
@@ -188,6 +183,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/gasks/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
+  },
+  ["vim-elixir"] = {
+    loaded = true,
+    path = "/home/gasks/.local/share/nvim/site/pack/packer/start/vim-elixir",
+    url = "https://github.com/elixir-editors/vim-elixir"
   },
   ["zenbones.nvim"] = {
     loaded = true,

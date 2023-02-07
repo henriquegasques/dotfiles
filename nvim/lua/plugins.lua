@@ -34,8 +34,8 @@ return packer.startup(function(use)
   use 'kyazdani42/nvim-tree.lua'                         -- File tree
   use 'lewis6991/gitsigns.nvim'                          -- Git integration
   use { 'nvim-telescope/telescope.nvim', tag = '0.1.0' } -- File finder (and more)
-  use 'phaazon/mind.nvim'                                -- Todos/tasks (org modeish tree thing)
   use 'xiyaowong/nvim-transparent'                       -- Remove all bg colors
+  use 'elixir-editors/vim-elixir'
 
   use {
     'VonHeikemen/lsp-zero.nvim',
