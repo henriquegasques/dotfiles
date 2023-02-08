@@ -1,4 +1,7 @@
 require("nvim-tree").setup({
+  hijack_cursor      = true, -- Keep cursor on the first character while navigating the tree
+  sync_root_with_cwd = true, -- Sync tree root when cwd changes
+  respect_buf_cwd    = true, -- Sync tree root with new buffer dir
   view = {
     adaptive_size = true,
      mappings = {
