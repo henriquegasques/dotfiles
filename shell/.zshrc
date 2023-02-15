@@ -65,7 +65,6 @@ plugins=(
   vi-mode
   systemd
   zsh-autosuggestions
-  fzf-tab
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -81,7 +80,7 @@ source $ZSH/oh-my-zsh.sh
 if [[ -n $SSH_CONNECTION ]]; then
   export EDITOR='vi'
 else
-  export EDITOR='vi'
+  export EDITOR='nvim'
 fi
 
 # Compilation flags
@@ -95,7 +94,7 @@ fi
 # bat was installed as batcat due to name clashing with another package
 alias bat="batcat --theme=ansi-dark"
 
-alias vi="~/AppImages/./nvim.AppImage"
+alias vi="~/.AppImages/./nvim.AppImage"
 alias zshconfig="vi ~/.zshrc"
 alias ohmyzsh="vi ~/.oh-my-zsh"
 alias viconfig="vi ~/.vimrc"
