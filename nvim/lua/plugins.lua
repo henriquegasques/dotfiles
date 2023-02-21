@@ -36,6 +36,7 @@ return packer.startup(function(use)
   use { 'nvim-telescope/telescope.nvim', tag = '0.1.0' } -- File finder (and more)
   use 'xiyaowong/nvim-transparent'                       -- Remove all bg colors
   use 'elixir-editors/vim-elixir'
+  use 'neovimhaskell/haskell-vim'
 
   use {
     'VonHeikemen/lsp-zero.nvim',
