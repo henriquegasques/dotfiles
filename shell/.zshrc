@@ -8,6 +8,7 @@ ZSH_THEME="lambda"
 # ZSH_THEME="random"
 
 export BAT_THEME="ansi-dark"
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=11"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
