@@ -96,10 +96,8 @@ fi
 alias bat="batcat --theme=ansi-dark"
 
 alias vi="~/.AppImages/./nvim.AppImage"
-alias zshconfig="vi ~/.zshrc"
-alias ohmyzsh="vi ~/.oh-my-zsh"
-alias viconfig="vi ~/.vimrc"
-alias nvimconfig="vi ~/.config/nvim"
+alias zshconfig="vi ~/workspace/dotfiles/shell/.zshrc"
+alias nvimconfig="vi ~/workspace/dotfiles/nvim"
 alias em="emacsclient -nw --a=\"\""
 alias be="bundle exec"
 

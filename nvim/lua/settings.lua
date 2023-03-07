@@ -25,7 +25,17 @@ lsp.preset('recommended')
 lsp.nvim_workspace()
 lsp.setup()
 
-vim.diagnostic.config({ virtual_text = true })
+vim.diagnostic.config({
+  virtual_text = false,
+  underline = true,
+  severity_sort = true,
+  float = {
+    focusable = false,
+    style = 'minimal',
+    border = 'rounded',
+    source = 'always',
+  },
+})
 
 require('gitsigns').setup {
   -- Overrides default signs for add and change
