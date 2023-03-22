@@ -153,3 +153,13 @@ export PATH="$HOME/.luarocks/bin:$PATH"
 export PATH=$HOME/.local/bin:$PATH
 
 alias fd=fdfind
+
+export GITHUB_USERNAME=henriquegasques
+
+function docker-compose () {
+  docker compose $@
+}
+
+[ -f "/home/gasks/.ghcup/env" ] && source "/home/gasks/.ghcup/env"
+
+export PATH=$PATH:~/roc_nightly-linux_x86_64-2023-03-17-7bba187/
