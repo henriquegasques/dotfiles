@@ -11,7 +11,9 @@ vim.cmd [[
   colorscheme zenbones
 ]]
 
-require("transparent").setup({ enable = false })
+require("transparent")
+
+vim.g.transparent_enabled = false
 
 -- Override some of Gotham's orange with yellow
 -- vim.api.nvim_set_hl(0, "Type", { fg = '#edb443' })

@@ -194,6 +194,11 @@ _G.packer_plugins = {
     path = "/home/gasks/.local/share/nvim/site/pack/packer/start/vim-elixir",
     url = "https://github.com/elixir-editors/vim-elixir"
   },
+  ["vim-gotham"] = {
+    loaded = true,
+    path = "/home/gasks/.local/share/nvim/site/pack/packer/start/vim-gotham",
+    url = "https://github.com/henriquegasques/vim-gotham"
+  },
   ["zenbones.nvim"] = {
     loaded = true,
     path = "/home/gasks/.local/share/nvim/site/pack/packer/start/zenbones.nvim",

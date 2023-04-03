@@ -29,6 +29,7 @@ return packer.startup(function(use)
 
   -- Colorschemes
   use { "mcchrish/zenbones.nvim", requires = "rktjmp/lush.nvim" }
+  use 'henriquegasques/vim-gotham'
 
   use 'nvim-lualine/lualine.nvim'                        -- Statusline
   use 'kyazdani42/nvim-tree.lua'                         -- File tree
