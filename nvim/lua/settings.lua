@@ -1,3 +1,10 @@
+vim.cmd([[
+  :command WQ wq
+  :command Wq wq
+  :command W w
+  :command Q q
+]])
+
 require("nvim-tree").setup({
   hijack_cursor      = true, -- Keep cursor on the first character while navigating the tree
   sync_root_with_cwd = true, -- Sync tree root when cwd changes
