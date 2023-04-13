@@ -160,6 +160,10 @@ function docker-compose () {
   docker compose $@
 }
 
+function ssm_login() {
+    aws ssm start-session --target $(ssm-instance-search $1) --profile pwdev
+}
+
 [ -f "/home/gasks/.ghcup/env" ] && source "/home/gasks/.ghcup/env"
 
 export PATH=$PATH:~/roc_nightly-linux_x86_64-2023-03-17-7bba187/
