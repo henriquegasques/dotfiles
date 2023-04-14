@@ -1,8 +1,13 @@
 vim.cmd([[
+  :command WQA wqa
+  :command WQa wqa
+  :command Wqa wqa
   :command WQ wq
   :command Wq wq
   :command W w
   :command Q q
+  :command QA qa
+  :command Qa qa
 ]])
 
 require("nvim-tree").setup({
