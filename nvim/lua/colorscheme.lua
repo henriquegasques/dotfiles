@@ -1,7 +1,7 @@
 vim.g.zenbones = {
   darken_non_text = 15,
-  lightness       = 'dim',
-  darkness        = 'warm',
+  -- lightness       = 'dim',
+  -- darkness        = 'warm',
 }
 
 vim.cmd [[
