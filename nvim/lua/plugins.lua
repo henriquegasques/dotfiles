@@ -34,7 +34,16 @@ return packer.startup(function(use)
   use 'nvim-lualine/lualine.nvim'                        -- Statusline
   use 'kyazdani42/nvim-tree.lua'                         -- File tree
   use 'lewis6991/gitsigns.nvim'                          -- Git integration
-  use { 'nvim-telescope/telescope.nvim', tag = '0.1.0' } -- File finder (and more)
+  use {
+    'nvim-telescope/telescope.nvim',
+    tag = '0.1.0',
+    requires = {
+      { "nvim-telescope/telescope-live-grep-args.nvim" },
+    },
+    config = function()
+      require("telescope").load_extension("live_grep_args")
+    end 
+  } -- File finder (and more)
   use 'xiyaowong/nvim-transparent'                       -- Remove all bg colors
   use 'elixir-editors/vim-elixir'
   use 'neovimhaskell/haskell-vim'

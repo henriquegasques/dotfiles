@@ -34,7 +34,7 @@ remap_key("n", "<C-Right>", ":vertical resize +2<CR>")
 
 
 remap_key("n", "<C-p>", "<cmd>Telescope find_files<CR>")
-remap_key("n", "<C-f>", "<cmd>Telescope live_grep<CR>")
+remap_key("n", "<C-f>", ":lua require('telescope').extensions.live_grep_args.live_grep_args()<CR>")
 remap_key("n", "<C-b>", "<cmd>Telescope buffers<cr>")
 
 remap_key("n", "<leader>d", "<cmd>Telescope lsp_definitions<CR>")
