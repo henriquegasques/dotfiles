@@ -11,15 +11,11 @@ vim.cmd([[
 ]])
 
 require("nvim-tree").setup({
+  on_attach = require('utils').nvim_tree_on_attach,
   hijack_cursor      = true, -- Keep cursor on the first character while navigating the tree
   sync_root_with_cwd = true, -- Sync tree root when cwd changes
   respect_buf_cwd    = true, -- Sync tree root with new buffer dir
-  view = {
-    adaptive_size = true,
-     mappings = {
-       list = {{ key = "x", action = "close_node" }},
-     },
-  },
+  view = { adaptive_size = true },
   filters = {},
 })
 
