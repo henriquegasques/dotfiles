@@ -15,7 +15,7 @@ vim.g.maplocalleader = " "
 
 -- Normal --
 -- Toggle NvimTree
-remap_key("n", "<C-n>", ":NvimTreeToggle<CR>")
+remap_key("n", "<C-n>", ":NvimTreeFindFileToggle<CR>")
 
 -- Clear highlighting of the previous search pressing Esc
 remap_key("n", "<esc>", ":noh<esc>", { silent = true })
