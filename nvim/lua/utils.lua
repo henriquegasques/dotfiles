@@ -30,7 +30,9 @@ function Utils.nvim_tree_on_attach(bufnr)
 
   api.config.mappings.default_on_attach(bufnr)
 
-  vim.keymap.set('n', 'x', api.node.navigate.parent_close, opts('Close Directory'))
+  vim.keymap.set('n', '?',   api.tree.toggle_help,           opts('Help'))
+  vim.keymap.set('n', 'x',   api.node.navigate.parent_close, opts('Close Directory'))
+  vim.keymap.set('n', '<C-s>', api.node.open.horizontal,       opts('Open: Horizontal Split'))
 end
 
 return Utils
