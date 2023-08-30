@@ -42,11 +42,12 @@ return packer.startup(function(use)
     },
     config = function()
       require("telescope").load_extension("live_grep_args")
-    end 
+    end
   } -- File finder (and more)
   use 'xiyaowong/nvim-transparent'                       -- Remove all bg colors
   use 'elixir-editors/vim-elixir'
   use 'neovimhaskell/haskell-vim'
+  use 'udalov/kotlin-vim'
 
   use {
     'VonHeikemen/lsp-zero.nvim',

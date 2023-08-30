@@ -167,3 +167,7 @@ function ssm_login() {
 [ -f "/home/gasks/.ghcup/env" ] && source "/home/gasks/.ghcup/env"
 
 export PATH=$PATH:~/roc_nightly-linux_x86_64-2023-03-17-7bba187/
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="$HOME/.sdkman"
+[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"

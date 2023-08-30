@@ -119,6 +119,11 @@ _G.packer_plugins = {
     path = "/home/gasks/.local/share/nvim/site/pack/packer/start/haskell-vim",
     url = "https://github.com/neovimhaskell/haskell-vim"
   },
+  ["kotlin-vim"] = {
+    loaded = true,
+    path = "/home/gasks/.local/share/nvim/site/pack/packer/start/kotlin-vim",
+    url = "https://github.com/udalov/kotlin-vim"
+  },
   ["lsp-zero.nvim"] = {
     loaded = true,
     path = "/home/gasks/.local/share/nvim/site/pack/packer/start/lsp-zero.nvim",
