@@ -132,7 +132,6 @@ bindkey '^l' scroll-and-clear-screen
 . $HOME/.asdf/completions/asdf.bash
 
 export UID=$UID
-export TERM=xterm-256color
 export TERMINAL=alacritty
 
 if type rg &> /dev/null; then
