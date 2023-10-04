@@ -48,6 +48,7 @@ return packer.startup(function(use)
   use 'elixir-editors/vim-elixir'
   use 'neovimhaskell/haskell-vim'
   use 'udalov/kotlin-vim'
+  use 'vim-crystal/vim-crystal'
 
   use {
     'VonHeikemen/lsp-zero.nvim',

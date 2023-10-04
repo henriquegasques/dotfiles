@@ -200,6 +200,11 @@ _G.packer_plugins = {
     path = "/home/gasks/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
   },
+  ["vim-crystal"] = {
+    loaded = true,
+    path = "/home/gasks/.local/share/nvim/site/pack/packer/start/vim-crystal",
+    url = "https://github.com/vim-crystal/vim-crystal"
+  },
   ["vim-elixir"] = {
     loaded = true,
     path = "/home/gasks/.local/share/nvim/site/pack/packer/start/vim-elixir",

@@ -94,11 +94,10 @@ fi
 # bat was installed as batcat due to name clashing with another package
 alias bat="batcat --theme=ansi-dark"
 
-alias vi="~/.AppImages/./nvim.AppImage"
-alias zshconfig="vi ~/.zshrc"
-alias ohmyzsh="vi ~/.oh-my-zsh"
-alias viconfig="vi ~/.vimrc"
-alias nvimconfig="vi ~/.config/nvim"
+alias vi="nvim"
+alias vis="vi -S Session.vim"
+alias zshconfig="vi ~/workspace/dotfiles/shell/.zshrc"
+alias nvimconfig="vi ~/workspace/dotfiles/nvim"
 alias em="emacsclient -nw --a=\"\""
 alias be="bundle exec"
 
@@ -170,3 +169,6 @@ export PATH=$PATH:~/roc_nightly-linux_x86_64-2023-03-17-7bba187/
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
+
+# opam configuration
+[[ ! -r /home/gasks/.opam/opam-init/init.zsh ]] || source /home/gasks/.opam/opam-init/init.zsh  > /dev/null 2> /dev/null
