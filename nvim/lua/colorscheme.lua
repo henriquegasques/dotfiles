@@ -1,7 +1,10 @@
 vim.g.zenbones = {
-  darken_non_text = 15,
-  lightness       = 'dim',
-  -- darkness        = 'warm',
+  darken_comments     = 35,
+  darken_non_text     = 15,
+  darken_line_nr      = 30,
+  -- darkness         = 'warm',
+  lightness           = 'dim',
+  solid_vert_split    = true,
 }
 
 vim.cmd [[
