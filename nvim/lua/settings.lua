@@ -34,3 +34,5 @@ require('gitsigns').setup {
     change = {hl = 'GitSignsChange', text = '▎', numhl='GitSignsChangeNr', linehl='GitSignsChangeLn'},
   },
 }
+
+vim.g.rspec_command = ':FloatermNew --title=RSpec --position=right --height=0.8 --width=0.5 bundle exec rspec {spec}'

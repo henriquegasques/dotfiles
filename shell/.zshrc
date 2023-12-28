@@ -112,6 +112,7 @@ alias mptl="cd ~/workspace/paywith/mrewards_onboarding_portal"
 alias aptl="cd ~/workspace/paywith/mRewards_admin"
 alias pwach="cd ~/workspace/paywith/pw_ach"
 alias bm="cd ~/workspace/paywith/balance_monitoring"
+alias mcrds="cd ~/workspace/paywith/mcards"
 
 # Checkout git banches with FZF
 alias gch="git branch -a | fzf | tr -d '[:space:]' | xargs git checkout"
@@ -132,6 +133,7 @@ bindkey '^l' scroll-and-clear-screen
 
 export UID=$UID
 export TERMINAL=alacritty
+export TERM=alacritty
 
 if type rg &> /dev/null; then
   export FZF_DEFAULT_COMMAND='rg --files'

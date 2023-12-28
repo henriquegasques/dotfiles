@@ -25,6 +25,7 @@ remap_key("n", "<C-h>", "<C-w>h")
 remap_key("n", "<C-j>", "<C-w>j")
 remap_key("n", "<C-k>", "<C-w>k")
 remap_key("n", "<C-l>", "<C-w>l")
+remap_key("t", "<C-w><C-w>", [[<C-\><C-n><C-w><C-w>]])
 
 -- Resize with arrows
 remap_key("n", "<C-Up>", ":resize -2<CR>")
@@ -39,3 +40,12 @@ remap_key("n", "<C-b>", "<cmd>Telescope buffers<cr>")
 
 remap_key("n", "<leader>d", "<cmd>Telescope lsp_definitions<CR>")
 remap_key("n", "<leader>r", "<cmd>Telescope lsp_references<CR>")
+
+-- RSpec.vim mappings
+remap_key("n", "<leader>t", ":call RunCurrentSpecFile()<CR>")
+remap_key("n", "<leader>s", ":call RunNearestSpec()<CR>")
+remap_key("n", "<leader>l", ":call RunLastSpec()<CR>")
+remap_key("n", "<leader>a", ":call RunAllSpecs()<CR>")
+
+remap_key("n", "<leader>c", ":FloatermNew --title=IRB --position=right --height=0.7 --width=0.5 irb <CR>")
+remap_key("n", "<leader>l", ":FloatermNew --title=RuboCop --autoclose=0 --position=bottom --height=0.35 --width=0.65 bundle exec rubocop % <CR>")

@@ -210,10 +210,20 @@ _G.packer_plugins = {
     path = "/home/gasks/.local/share/nvim/site/pack/packer/start/vim-elixir",
     url = "https://github.com/elixir-editors/vim-elixir"
   },
+  ["vim-floaterm"] = {
+    loaded = true,
+    path = "/home/gasks/.local/share/nvim/site/pack/packer/start/vim-floaterm",
+    url = "https://github.com/voldikss/vim-floaterm"
+  },
   ["vim-gotham"] = {
     loaded = true,
     path = "/home/gasks/.local/share/nvim/site/pack/packer/start/vim-gotham",
     url = "https://github.com/henriquegasques/vim-gotham"
+  },
+  ["vim-rspec"] = {
+    loaded = true,
+    path = "/home/gasks/.local/share/nvim/site/pack/packer/start/vim-rspec",
+    url = "https://github.com/thoughtbot/vim-rspec"
   },
   ["zenbones.nvim"] = {
     loaded = true,

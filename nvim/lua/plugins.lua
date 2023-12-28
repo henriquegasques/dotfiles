@@ -49,6 +49,8 @@ return packer.startup(function(use)
   use 'neovimhaskell/haskell-vim'
   use 'udalov/kotlin-vim'
   use 'vim-crystal/vim-crystal'
+  use 'thoughtbot/vim-rspec'
+  use 'voldikss/vim-floaterm'
 
   use {
     'VonHeikemen/lsp-zero.nvim',
