@@ -5,7 +5,8 @@ local actions = require "telescope.actions"
 
 telescope.setup {
   defaults = {
-    path_display = { "smart" },
+    path_display = { "absolute" },
+    wrap_results = true,
 
     mappings = {
       i = {
