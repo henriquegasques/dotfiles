@@ -113,6 +113,7 @@ alias aptl="cd ~/workspace/paywith/mRewards_admin"
 alias pwach="cd ~/workspace/paywith/pw_ach"
 alias bm="cd ~/workspace/paywith/balance_monitoring"
 alias mcrds="cd ~/workspace/paywith/mcards"
+alias pling="cd ~/workspace/paywith/GenU"
 
 # Checkout git banches with FZF
 alias gch="git branch -a | fzf | tr -d '[:space:]' | xargs git checkout"
@@ -151,6 +152,7 @@ export PATH=$PATH:$HOME/.elixir-ls/release
 export PATH=$PATH:/usr/local/go/bin
 export PATH="$HOME/.luarocks/bin:$PATH"
 export PATH=$HOME/.local/bin:$PATH
+export PATH=$HOME/.config/emacs/bin:$PATH
 
 alias fd=fdfind
 
