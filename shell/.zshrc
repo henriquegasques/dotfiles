@@ -21,24 +21,10 @@ HYPHEN_INSENSITIVE="true"
 # DISABLE_AUTO_UPDATE="true"
 
 # Uncomment the following line to change how often to auto-update (in days).
-# export UPDATE_ZSH_DAYS=13
-
-# Uncomment the following line to disable colors in ls.
-# DISABLE_LS_COLORS="true"
-
-# Uncomment the following line to disable auto-setting terminal title.
-# DISABLE_AUTO_TITLE="true"
-
-# Uncomment the following line to enable command auto-correction.
-# ENABLE_CORRECTION="true"
+export UPDATE_ZSH_DAYS=25
 
 # Uncomment the following line to display red dots whilst waiting for completion.
 COMPLETION_WAITING_DOTS="true"
-
-# Uncomment the following line if you want to disable marking untracked files
-# under VCS as dirty. This makes repository status check for large repositories
-# much, much faster.
-# DISABLE_UNTRACKED_FILES_DIRTY="true"
 
 # Uncomment the following line if you want to change the command execution time
 # stamp shown in the history command output.
@@ -103,7 +89,7 @@ alias em="emacsclient -nw --a=\"\""
 alias be="bundle exec"
 
 # Directly cd into project dir
-alias dotfiles="cd ~/workspace/dotfiles"
+alias dotfs="cd ~/workspace/dotfiles"
 alias afo="cd ~/workspace/paywith/auth_force_one"
 alias dpe="cd ~/workspace/paywith/dpe"
 alias pgw="cd ~/workspace/paywith/processor_gateway"
@@ -139,7 +125,7 @@ export TERM=alacritty
 
 if type rg &> /dev/null; then
   export FZF_DEFAULT_COMMAND='rg --files'
-  export FZF_DEFAULT_OPTS="--ansi --preview-window 'right:60%' --height 70% --border --preview 'batcat --color=always --style=header,grid,numbers --line-range :300 {}'"
+  export FZF_DEFAULT_OPTS="--ansi --preview-window 'right:70%' --height 80% --border --preview 'batcat --color=always --style=header,grid,numbers --line-range :300 {}'"
 fi
 
 # Base16 Shell
