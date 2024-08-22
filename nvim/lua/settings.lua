@@ -37,12 +37,12 @@ vim.diagnostic.config({
   },
 })
 
-require('gitsigns').setup {
+-- require('gitsigns').setup {
   -- Overrides default signs for add and change
-  signs = {
-    add    = {hl = 'GitSignsAdd'   , text = '▎', numhl='GitSignsAddNr'   , linehl='GitSignsAddLn'},
-    change = {hl = 'GitSignsChange', text = '▎', numhl='GitSignsChangeNr', linehl='GitSignsChangeLn'},
-  },
-}
+  -- signs = {
+  --   add    = {hl = 'GitSignsAdd'   , text = '▎', numhl='GitSignsAddNr'   , linehl='GitSignsAddLn'},
+  --   change = {hl = 'GitSignsChange', text = '▎', numhl='GitSignsChangeNr', linehl='GitSignsChangeLn'},
+  -- },
+-- }
 
 vim.g.rspec_command = ':FloatermNew --title=RSpec --position=right --height=0.8 --width=0.5 bundle exec rspec {spec}'

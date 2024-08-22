@@ -37,7 +37,7 @@ return packer.startup(function(use)
   use 'lewis6991/gitsigns.nvim'                          -- Git integration
   use {
     'nvim-telescope/telescope.nvim',
-    tag = '0.1.0',
+    tag = '0.1.8',
     requires = {
       { "nvim-telescope/telescope-live-grep-args.nvim" },
     },
