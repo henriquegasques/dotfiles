@@ -15,8 +15,12 @@ require("nvim-tree").setup({
   hijack_cursor      = true, -- Keep cursor on the first character while navigating the tree
   sync_root_with_cwd = true, -- Sync tree root when cwd changes
   respect_buf_cwd    = true, -- Sync tree root with new buffer dir
-  view = { adaptive_size = true },
-  filters = {},
+  filters            = { dotfiles = true },
+  view = {
+    centralize_selection = true,
+    adaptive_size = true,
+    width = { max = 50 }
+  }
 })
 
 local lsp = require('lsp-zero')
@@ -37,7 +41,8 @@ vim.diagnostic.config({
   },
 })
 
--- require('gitsigns').setup {
+require('gitsigns')
+-- .setup {
   -- Overrides default signs for add and change
   -- signs = {
   --   add    = {hl = 'GitSignsAdd'   , text = '▎', numhl='GitSignsAddNr'   , linehl='GitSignsAddLn'},

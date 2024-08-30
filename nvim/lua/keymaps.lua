@@ -30,8 +30,8 @@ remap_key("t", "<C-w><C-w>", [[<C-\><C-n><C-w><C-w>]])
 -- Resize with arrows
 remap_key("n", "<C-Up>", ":resize -2<CR>")
 remap_key("n", "<C-Down>", ":resize +2<CR>")
-remap_key("n", "<C-Left>", ":vertical resize -2<CR>")
-remap_key("n", "<C-Right>", ":vertical resize +2<CR>")
+remap_key("n", "<C-Left>", ":vertical resize +2<CR>")
+remap_key("n", "<C-Right>", ":vertical resize -2<CR>")
 
 
 remap_key("n", "<C-p>", "<cmd>Telescope find_files<CR>")
