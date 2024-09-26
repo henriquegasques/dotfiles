@@ -11,7 +11,7 @@ vim.cmd [[
   set termguicolors
   set background=light
 
-  colorscheme zenbones
+  colorscheme github_light
 ]]
 
 require("transparent")
