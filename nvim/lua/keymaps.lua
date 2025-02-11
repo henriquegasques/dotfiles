@@ -41,6 +41,8 @@ remap_key("n", "<C-b>", "<cmd>Telescope buffers<cr>")
 remap_key("n", "<leader>d", "<cmd>Telescope lsp_definitions<CR>")
 remap_key("n", "<leader>r", "<cmd>Telescope lsp_references<CR>")
 
+remap_key("n", "<leader>b", "<cmd>Gitsigns blame_line<CR>")
+
 -- RSpec.vim mappings
 remap_key("n", "<leader>t", ":call RunCurrentSpecFile()<CR>")
 remap_key("n", "<leader>s", ":call RunNearestSpec()<CR>")

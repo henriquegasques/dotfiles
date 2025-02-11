@@ -10,6 +10,10 @@ vim.cmd([[
   :command Qa qa
 ]])
 
+require('github-theme').setup({
+    options = { styles = { comments = 'italic' } },
+})
+
 require("nvim-tree").setup({
   on_attach = require('utils').nvim_tree_on_attach,
   hijack_cursor      = true, -- Keep cursor on the first character while navigating the tree
@@ -23,12 +27,6 @@ require("nvim-tree").setup({
   }
 })
 
-local lsp = require('lsp-zero')
-
-lsp.preset('recommended')
-lsp.nvim_workspace()
-lsp.setup()
-
 vim.diagnostic.config({
   virtual_text = false,
   underline = true,
@@ -41,13 +39,6 @@ vim.diagnostic.config({
   },
 })
 
-require('gitsigns')
--- .setup {
-  -- Overrides default signs for add and change
-  -- signs = {
-  --   add    = {hl = 'GitSignsAdd'   , text = '▎', numhl='GitSignsAddNr'   , linehl='GitSignsAddLn'},
-  --   change = {hl = 'GitSignsChange', text = '▎', numhl='GitSignsChangeNr', linehl='GitSignsChangeLn'},
-  -- },
--- }
+require('gitsigns').setup()
 
 vim.g.rspec_command = ':FloatermNew --title=RSpec --position=right --height=0.8 --width=0.5 bundle exec rspec {spec}'

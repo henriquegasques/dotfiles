@@ -1,17 +1,17 @@
 vim.g.zenbones = {
-  darken_comments     = 30,
-  darken_non_text     = 15,
-  darken_line_nr      = 30,
-  -- darkness         = 'warm',
-  -- lightness           = 'dim',
-  solid_vert_split    = true,
+  darken_comments  = 30,
+  darken_non_text  = 15,
+  darken_line_nr   = 30,
+  -- darkness      = 'warm',
+  -- lightness     = 'dim',
+  solid_vert_split = true,
 }
 
 vim.cmd [[
   set termguicolors
-  set background=light
+  set background=dark
 
-  colorscheme zenbones
+  colorscheme gotham
 ]]
 
 require("transparent")
